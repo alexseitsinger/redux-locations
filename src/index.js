@@ -1,6 +1,6 @@
-import "core-js/stable" from "core-js"
+import "core-js/stable"
 
 export { createLocationsMiddleware } from "./locations/middleware"
-import { locationsReducer } from "./locations/reducer"
-import { updateLocations } from "./locations/actions"
-import { UPDATE } from "./locations/types"
+export { locationsReducer } from "./locations/reducer"
+export { updateLocations } from "./locations/actions"
+export { UPDATE } from "./locations/types"
