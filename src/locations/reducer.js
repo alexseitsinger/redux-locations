@@ -15,6 +15,9 @@ const initialState = {
 }
 
 /**
+ * @name locationsReducer
+ *
+ * @description
  * The reducer to manage redux state changes for locations.
  *
  * @param {object|array|string} [state={history: [], last: {}, next:{}}]

@@ -4,6 +4,9 @@ const LOCATION_CHANGE = "@@router/LOCATION_CHANGE"
 let lastLocation
 
 /**
+ * @name createLocationsMiddleware
+ *
+ * @description
  * Creates a redux middleware that adds the next and last locations to redux
  * store upon navigatin changes.
  *
