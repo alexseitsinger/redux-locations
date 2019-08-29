@@ -1,3 +1,7 @@
+<a name="v0.2.0"></a>
+## [v0.2.0](https://github.com/alexseitsinger/redux-locations/compare/v0.1.0...v0.2.0) (2019-08-29)
+
+
 <a name="v0.1.0"></a>
 ## [v0.1.0](https://github.com/alexseitsinger/redux-locations/compare/4e62349cdfcbef14759747ecd9b266e838804753...v0.1.0) (2019-08-29)
 
