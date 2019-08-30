@@ -1,8 +1,8 @@
 import { UPDATE } from "./types"
 
-export const updateLocations = (last, next) => ({
+export const updateLocations = (last, current) => ({
   type: UPDATE,
   last,
-  next,
+  current,
 })
 
