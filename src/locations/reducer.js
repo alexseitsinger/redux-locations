@@ -11,7 +11,7 @@ const defaultLocation = {
 const initialState = {
   history: [],
   last: defaultLocation,
-  next: defaultLocation,
+  current: defaultLocation,
 }
 
 /**
@@ -35,8 +35,8 @@ export const locationsReducer = (state = initialState, action) => {
     }
     case UPDATE: {
       return {
-        next: action.next ? action.next : state.next,
         last: action.last ? action.last : state.last,
+        current: action.current ? action.current : state.current,
         history: action.last ? [
           ...state.history,
           action.last,
