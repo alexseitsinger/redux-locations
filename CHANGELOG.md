@@ -1,3 +1,14 @@
+<a name="v0.2.1"></a>
+## [v0.2.1](https://github.com/alexseitsinger/redux-locations/compare/v0.2.0...v0.2.1) (2019-08-30)
+
+### Bug Fixes
+- Updates middleware. ([fffb142](https://github.com/alexseitsinger/redux-locations/commit/fffb142bf2180647e78c7e09b91895ea7cef0ba2))
+
+### Code Refactoring
+- Removes unused variable. ([c24a599](https://github.com/alexseitsinger/redux-locations/commit/c24a5997110f74296b21aeb12ee6365bc91d56d2))
+- Removes unused variable. ([a248322](https://github.com/alexseitsinger/redux-locations/commit/a24832260163b464b9af8bd98bab222dd34944fb))
+
+
 <a name="v0.2.0"></a>
 ## [v0.2.0](https://github.com/alexseitsinger/redux-locations/compare/v0.1.0...v0.2.0) (2019-08-29)
 
