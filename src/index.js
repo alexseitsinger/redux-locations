@@ -1,4 +1,4 @@
-import "core-js/stable"
+//import "core-js/stable"
 
 export { createLocationsMiddleware } from "./locations/middleware"
 export { locationsReducer } from "./locations/reducer"
