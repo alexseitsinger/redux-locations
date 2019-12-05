@@ -1,3 +1,13 @@
+<a name="v0.3.0"></a>
+## [v0.3.0](https://github.com/alexseitsinger/redux-locations/compare/v0.2.1...v0.3.0) (2019-12-05)
+
+### Code Refactoring
+- Removes core-js. ([26e2986](https://github.com/alexseitsinger/redux-locations/commit/26e29867421c546def7092cfefe21939ee9d934b))
+
+### Features
+- Adds new entry point. ([b0a6763](https://github.com/alexseitsinger/redux-locations/commit/b0a67633f326a2e6380433187807099f95d31f69))
+
+
 <a name="v0.2.1"></a>
 ## [v0.2.1](https://github.com/alexseitsinger/redux-locations/compare/v0.2.0...v0.2.1) (2019-08-30)
 
