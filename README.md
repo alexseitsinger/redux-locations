@@ -1,7 +1,5 @@
 ## Redux Locations
 
-### Description
-
 Save location changes to the 'locations' store state.
 
 ### Installation
