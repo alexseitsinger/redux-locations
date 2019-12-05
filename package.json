@@ -31,40 +31,42 @@
     "history"
   ],
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/plugin-proposal-export-default-from": "7.5.2",
-    "@babel/plugin-proposal-export-namespace-from": "7.5.2",
-    "@babel/plugin-syntax-export-default-from": "7.2.0",
-    "@babel/plugin-syntax-export-namespace-from": "7.2.0",
-    "@babel/plugin-transform-runtime": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
-    "@babel/runtime": "7.5.5",
-    "@babel/runtime-corejs3": "^7.5.5",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-proposal-export-default-from": "7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "7.7.4",
+    "@babel/plugin-syntax-export-default-from": "7.7.4",
+    "@babel/plugin-syntax-export-namespace-from": "7.7.4",
+    "@babel/plugin-transform-runtime": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "7.7.4",
+    "@babel/runtime": "7.7.4",
+    "@babel/runtime-corejs3": "^7.7.4",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
-    "babel-plugin-emotion": "10.0.16",
+    "babel-plugin-emotion": "10.0.23",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
-    "core-js": "3.2.1",
+    "core-js": "3.4.7",
     "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.14.0",
+    "enzyme-adapter-react-16": "1.15.1",
     "jest": "24.9.0",
-    "react": "16.9.0",
-    "react-dom": "^16.9.0",
-    "webpack": "4.39.3",
-    "webpack-cli": "3.3.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
     "prop-types": "15.7.2"
   },
   "peerDependencies": {
-    "react": "16.8.6"
+    "react": "^16.12.0"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
+    "build:production": "./node_modules/.bin/webpack --config=webpack.config.js",
+    "build:development": "./node_modules/.bin/webpack --config=webpack.config.dev.js",
+    "build": "yarn run build:production && yarn run build:development",
     "test": "./node_modules/.bin/jest"
   }
 }
