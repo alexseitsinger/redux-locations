@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "jsx": "preserve",
+
+    "lib": ["dom", "es2015"],
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+
+    "baseUrl": ".",
+    "paths": {
+      "tests/*": ["tests/*"],
+      "src/*": ["src/*"],
+      "types": ["index.d.ts"]
+    }
+  },
+  "exclude": ["node_modules", ".yalc", "dist"]
+}

@@ -3,7 +3,7 @@ const nodeExternals = require("webpack-node-externals")
 const TerserPlugin = require("terser-webpack-plugin")
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   mode: "production",
   target: "node",
   devtool: false,
@@ -15,9 +15,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         include: [path.resolve("./src")],
-        use: "babel-loader"
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+            },
+          },
+          "ts-loader",
+        ],
       },
     ],
   },
@@ -44,4 +52,7 @@ module.exports = {
       },
     }),
   ],
+  resolve: {
+    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+  },
 }

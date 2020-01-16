@@ -1,8 +1,6 @@
-import { configure, shallow, render, mount } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
+const { configure } = require("enzyme")
+const Adapter = require("enzyme-adapter-react-16")
 
 configure({ adapter: new Adapter() })
 
-global.shallow = shallow
-global.render = render
-global.mount = mount
+jest.setTimeout(20000)
