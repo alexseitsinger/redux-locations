@@ -1,3 +1,13 @@
+<a name="v1.0.0"></a>
+## [v1.0.0](https://github.com/alexseitsinger/redux-locations/compare/v0.3.0...v1.0.0) (2020-01-16)
+
+### Code Refactoring
+- Updates for TS. ([be22aa0](https://github.com/alexseitsinger/redux-locations/commit/be22aa01b7f11a2dba2537c5689b3e5176c2f47b))
+
+### Features
+- Updates & adds configs for TS. ([76249e5](https://github.com/alexseitsinger/redux-locations/commit/76249e5e14f1363fa3c19c298c9a08060a24ccc0))
+
+
 <a name="v0.3.0"></a>
 ## [v0.3.0](https://github.com/alexseitsinger/redux-locations/compare/v0.2.1...v0.3.0) (2019-12-05)
 
