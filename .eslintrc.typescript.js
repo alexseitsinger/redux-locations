@@ -1,21 +1,21 @@
-const path = require("path");
+const path = require("path")
 
 module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 9,
     sourceType: "module",
-    project: "./tsconfig.json"
+    project: "./tsconfig.json",
   },
   settings: {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
     "import/resolver": {
       typescript: {
-        alwaysTryTypes: true
-      }
-    }
+        alwaysTryTypes: true,
+      },
+    },
   },
   extends: [
     "@alexseitsinger/eslint-config/eslint",
@@ -26,7 +26,6 @@ module.exports = {
     "@alexseitsinger/eslint-config/jest-formatting",
     "@alexseitsinger/eslint-config/typescript-eslint",
     "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint"
-  ]
-};
+    "prettier/@typescript-eslint",
+  ],
+}

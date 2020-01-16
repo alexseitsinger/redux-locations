@@ -9,5 +9,5 @@ module.exports = {
   semi: false,
   useTabs: false,
   proseWrap: "preserve",
-  arrowParens: "avoid"
-};
+  arrowParens: "avoid",
+}

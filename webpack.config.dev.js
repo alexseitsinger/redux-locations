@@ -26,14 +26,14 @@ module.exports = {
           },
           "ts-loader",
         ],
-      }
-    ]
+      },
+    ],
   },
   externals: [
     nodeExternals({
       modulesFromFile: {
         exclude: ["dependencies"],
-        include: ["devDependencies", "peerDependencies"]
+        include: ["devDependencies", "peerDependencies"],
       },
     }),
   ],

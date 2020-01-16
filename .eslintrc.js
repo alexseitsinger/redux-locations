@@ -1,18 +1,18 @@
-const path = require("path");
-const typescriptConfig = require("./.eslintrc.typescript");
+const path = require("path")
+const typescriptConfig = require("./.eslintrc.typescript")
 
 module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: 9,
-    sourceType: "module"
+    sourceType: "module",
   },
   settings: {
     "import/resolver": {
       webpack: {
-        config: path.resolve("./webpack.config.dev.js")
-      }
-    }
+        config: path.resolve("./webpack.config.dev.js"),
+      },
+    },
   },
   extends: [
     "@alexseitsinger/eslint-config/eslint",
@@ -25,12 +25,11 @@ module.exports = {
     "@alexseitsinger/eslint-config/simple-import-sort",
     "prettier",
     "prettier/babel",
-    "prettier/react"
   ],
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
-      ...typescriptConfig
-    }
-  ]
-};
+      ...typescriptConfig,
+    },
+  ],
+}
