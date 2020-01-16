@@ -9,7 +9,7 @@ export const defaultLocation: Location = {
   state: null,
   key: "",
   hash: "",
-  search: ""
+  search: "",
 }
 
 export interface ReducerState {
@@ -21,10 +21,10 @@ export interface ReducerState {
 const initialState: ReducerState = {
   history: [],
   last: defaultLocation,
-  current: defaultLocation
+  current: defaultLocation,
 }
 
-type Actions = UpdateLocationsAction;
+type Actions = UpdateLocationsAction
 
 export const locationsReducer = (
   state = initialState,
@@ -38,7 +38,7 @@ export const locationsReducer = (
       return {
         last: action.last ? action.last : state.last,
         current: action.current ? action.current : state.current,
-        history: action.last ? [...state.history, action.last] : state.history
+        history: action.last ? [...state.history, action.last] : state.history,
       }
     }
   }

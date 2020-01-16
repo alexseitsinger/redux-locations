@@ -14,5 +14,5 @@ export const updateLocations = (
 ): UpdateLocationsAction => ({
   type: UPDATE,
   last,
-  current
+  current,
 })
