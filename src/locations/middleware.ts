@@ -1,10 +1,15 @@
+import { Location } from "history"
+
 import { updateLocations } from "./actions"
+import { LOCATION_CHANGE } from "./constants"
+import { defaultLocation } from "./reducer"
 
-const LOCATION_CHANGE = "@@router/LOCATION_CHANGE"
-let lastLocation
+let lastLocation: Location = defaultLocation
 
-export const createLocationsMiddleware = (actionType = LOCATION_CHANGE) => store => next => action => {
-  if (!( action.type )) {
+export const createLocationsMiddleware = (
+  actionType = LOCATION_CHANGE
+) => () => next => action => {
+  if (!action.type) {
     return next(action)
   }
 
@@ -19,4 +24,3 @@ export const createLocationsMiddleware = (actionType = LOCATION_CHANGE) => store
   }
   return next(action)
 }
-
