@@ -1,3 +1,10 @@
+<a name="v2.0.0"></a>
+## [v2.0.0](https://github.com/alexseitsinger/redux-locations/compare/v1.0.0...v2.0.0) (2020-01-16)
+
+### Code Refactoring
+- Updates for ts. ([d264cab](https://github.com/alexseitsinger/redux-locations/commit/d264cab3c2f3aa60fc601087849f8fe68ef7e860))
+
+
 <a name="v1.0.0"></a>
 ## [v1.0.0](https://github.com/alexseitsinger/redux-locations/compare/v0.3.0...v1.0.0) (2020-01-16)
 
