@@ -2,6 +2,9 @@ dist/
 build/
 *.core
 
+.yalc/
+yalc.lock
+
 ### Node ###
 # Logs
 logs
