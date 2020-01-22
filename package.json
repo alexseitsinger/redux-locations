@@ -3,13 +3,13 @@
   "version": "2.1.0",
   "description": "Saves the last and next locations to redux store.",
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.d.ts",
-    "dist/*",
-    "package.json",
-    "README.md",
+    "*.js",
+    "*.ts",
+    "*.tsx",
+    "*.md",
+    "dist",
     "LICENSE"
   ],
   "scripts": {
@@ -47,7 +47,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@alexseitsinger/eslint-config": "^2.6.0",
+    "@alexseitsinger/eslint-config": "file:.yalc/@alexseitsinger/eslint-config",
     "@babel/core": "7.8.3",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-export-default-from": "7.8.3",
