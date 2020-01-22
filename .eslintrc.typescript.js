@@ -15,12 +15,26 @@ module.exports = {
       typescript: {
         alwaysTryTypes: true,
       },
+      jest: {
+        jestConfigFile: path.resolve("./jest.config.js"),
+      },
+      webpack: {
+        config: path.resolve("./webpack.config.dev.js"),
+      },
     },
   },
+  plugins: [
+    "import",
+    "node",
+    "react",
+    "jest",
+    "jest-formatting",
+    "@typescript-eslint/eslint-plugin",
+  ],
   extends: [
     "@alexseitsinger/eslint-config/eslint",
-    "@alexseitsinger/eslint-config/import",
     "@alexseitsinger/eslint-config/node",
+    "@alexseitsinger/eslint-config/import",
     "@alexseitsinger/eslint-config/react",
     "@alexseitsinger/eslint-config/jest",
     "@alexseitsinger/eslint-config/jest-formatting",

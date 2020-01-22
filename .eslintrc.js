@@ -14,6 +14,15 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    "react",
+    "node",
+    "import",
+    "package-json",
+    "jest",
+    "jest-formatting",
+    "simple-import-sort",
+  ],
   extends: [
     "@alexseitsinger/eslint-config/eslint",
     "@alexseitsinger/eslint-config/react",
