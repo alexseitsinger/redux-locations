@@ -1,3 +1,10 @@
+<a name="v2.1.0"></a>
+## [v2.1.0](https://github.com/alexseitsinger/redux-locations/compare/v2.0.0...v2.1.0) (2020-01-22)
+
+### Features
+- Updates src. ([8aa1150](https://github.com/alexseitsinger/redux-locations/commit/8aa1150e501030e3f86a49306f4b409af1515394))
+
+
 <a name="v2.0.0"></a>
 ## [v2.0.0](https://github.com/alexseitsinger/redux-locations/compare/v1.0.0...v2.0.0) (2020-01-16)
 
