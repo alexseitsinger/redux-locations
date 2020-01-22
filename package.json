@@ -1,6 +1,6 @@
 {
   "name": "@alexseitsinger/redux-locations",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Saves the last and next locations to redux store.",
   "main": "index.js",
   "types": "index.d.ts",
