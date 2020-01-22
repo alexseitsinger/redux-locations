@@ -1,15 +1,16 @@
-import { Location } from "history"
+import { Location as HistoryLocation } from "history"
+import { AnyAction, Dispatch } from "redux"
 
 import { updateLocations } from "./actions"
 import { LOCATION_CHANGE } from "./constants"
 import { defaultLocation } from "./reducer"
 
-let lastLocation: Location = defaultLocation
+let lastLocation: HistoryLocation = defaultLocation
 
 export const createLocationsMiddleware = (
   actionType = LOCATION_CHANGE
-) => () => next => action => {
-  if (!action.type) {
+) => () => (next: Dispatch) => (action: AnyAction): ReturnType<typeof next> => {
+  if (action.type === undefined) {
     return next(action)
   }
 

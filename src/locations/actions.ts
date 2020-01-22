@@ -1,16 +1,16 @@
-import { Location } from "history"
+import { Location as HistoryLocation } from "history"
 
 import { UPDATE } from "./constants"
 
 export interface UpdateLocationsAction {
   type: typeof UPDATE;
-  last: Location;
-  current: Location;
+  last: HistoryLocation;
+  current: HistoryLocation;
 }
 
 export const updateLocations = (
-  last: Location,
-  current: Location
+  last: HistoryLocation,
+  current: HistoryLocation
 ): UpdateLocationsAction => ({
   type: UPDATE,
   last,
