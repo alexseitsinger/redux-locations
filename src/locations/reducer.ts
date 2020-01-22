@@ -1,7 +1,6 @@
 import { Location as HistoryLocation } from "history"
 
-import { UpdateLocationsAction } from "src/locations/actions"
-
+import { UpdateLocationsAction } from "./actions"
 import { UPDATE } from "./constants"
 
 export const defaultLocation: HistoryLocation = {
@@ -12,13 +11,13 @@ export const defaultLocation: HistoryLocation = {
   search: "",
 }
 
-export interface ReducerState {
+export interface LocationsReducerState {
   history: string[];
   last: HistoryLocation;
   current: HistoryLocation;
 }
 
-const initialState: ReducerState = {
+const initialState: LocationsReducerState = {
   history: [],
   last: defaultLocation,
   current: defaultLocation,
@@ -27,7 +26,7 @@ const initialState: ReducerState = {
 export const locationsReducer = (
   state = initialState,
   action: UpdateLocationsAction
-): ReducerState => {
+): LocationsReducerState => {
   switch (action.type) {
     default: {
       return state
