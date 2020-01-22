@@ -12,7 +12,9 @@
     "strictNullChecks": true,
     "sourceMap": true,
 
+    "outDir": "dist",
     "declaration": true,
+
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
@@ -27,10 +29,9 @@
     "baseUrl": ".",
     "paths": {
       "src": ["src"],
-      "src/*": ["src/*"],
-      "types": ["index.d.ts"]
+      "src/*": ["src/*"]
     }
   },
-  "include": ["src", "tests"],
-  "exclude": ["node_modules", ".yalc", "dist"]
+  "include": ["src"],
+  "exclude": ["node_modules", ".yalc", "dist", "tests"]
 }
