@@ -5,12 +5,10 @@
   "main": "index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "*.js",
-    "*.ts",
-    "*.tsx",
-    "*.md",
-    "dist",
-    "LICENSE"
+    "index.js",
+    "dist/*",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "build": "yarn run build:production && yarn run build:development",
@@ -47,7 +45,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@alexseitsinger/eslint-config": "file:.yalc/@alexseitsinger/eslint-config",
+    "@alexseitsinger/eslint-config": "^2.7.0",
     "@babel/core": "7.8.3",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-export-default-from": "7.8.3",
