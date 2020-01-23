@@ -1,3 +1,11 @@
+<a name="v2.2.0"></a>
+## [v2.2.0](https://github.com/alexseitsinger/redux-locations/compare/v2.1.0...v2.2.0) (2020-01-23)
+
+### Code Refactoring
+- Deltes manually created defintion. ([17a708e](https://github.com/alexseitsinger/redux-locations/commit/17a708ec88abbed6a6a8f400685732a6bbb3e3d6))
+- Deltes mistakenly created defs. ([c9c1e38](https://github.com/alexseitsinger/redux-locations/commit/c9c1e38ecac50ed373e8739b1135e8e222f58559))
+
+
 <a name="v2.1.0"></a>
 ## [v2.1.0](https://github.com/alexseitsinger/redux-locations/compare/v2.0.0...v2.1.0) (2020-01-22)
 
