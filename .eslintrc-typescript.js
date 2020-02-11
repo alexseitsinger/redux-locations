@@ -24,8 +24,9 @@ module.exports = {
     },
   },
   plugins: [
-    "import",
     "node",
+    "import",
+    "simple-import-sort",
     "react",
     "jest",
     "jest-formatting",
@@ -35,6 +36,7 @@ module.exports = {
     "@alexseitsinger/eslint-config/eslint",
     "@alexseitsinger/eslint-config/node",
     "@alexseitsinger/eslint-config/import",
+    "@alexseitsinger/eslint-config/simple-import-sort",
     "@alexseitsinger/eslint-config/react",
     "@alexseitsinger/eslint-config/jest",
     "@alexseitsinger/eslint-config/jest-formatting",
