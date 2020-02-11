@@ -1,11 +1,10 @@
 import { AnyAction, Dispatch } from "redux"
-import { Location as HistoryLocation } from "history"
 
 import { updateLocations } from "./actions"
 import { LOCATION_CHANGE } from "./constants"
 import { defaultLocation } from "./reducer"
 
-let lastLocation: HistoryLocation = defaultLocation
+let lastLocation = defaultLocation
 
 export const createLocationsMiddleware = (
   actionType = LOCATION_CHANGE
