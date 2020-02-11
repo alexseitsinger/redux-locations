@@ -1,3 +1,10 @@
+<a name="v2.3.0"></a>
+## [v2.3.0](https://github.com/alexseitsinger/redux-locations/compare/v2.2.1...v2.3.0) (2020-02-11)
+
+### Code Refactoring
+- Changes import to fix eslint error. ([ebf4ddb](https://github.com/alexseitsinger/redux-locations/commit/ebf4ddb4d990d17c30b4d5a286b9394bac0d459a))
+
+
 <a name="v2.2.1"></a>
 ## [v2.2.1](https://github.com/alexseitsinger/redux-locations/compare/v2.2.0...v2.2.1) (2020-02-11)
 
