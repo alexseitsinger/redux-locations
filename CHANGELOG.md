@@ -1,3 +1,13 @@
+<a name="v2.2.1"></a>
+## [v2.2.1](https://github.com/alexseitsinger/redux-locations/compare/v2.2.0...v2.2.1) (2020-02-11)
+
+### Bug Fixes
+- Changes action type check. ([0cdce3f](https://github.com/alexseitsinger/redux-locations/commit/0cdce3f88bae8a68076653d68ba147d53d2dc4e7))
+
+### Code Refactoring
+- Renames constant. ([bc99faa](https://github.com/alexseitsinger/redux-locations/commit/bc99faadd878af3b67dcecb38fec2d7209318192))
+
+
 <a name="v2.2.0"></a>
 ## [v2.2.0](https://github.com/alexseitsinger/redux-locations/compare/v2.1.0...v2.2.0) (2020-01-23)
 
