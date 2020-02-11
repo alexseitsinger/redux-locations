@@ -40,6 +40,7 @@ module.exports = {
     "@alexseitsinger/eslint-config/jest-formatting",
     "@alexseitsinger/eslint-config/typescript-eslint",
     "prettier",
+    "prettier/react",
     "prettier/@typescript-eslint",
   ],
 }

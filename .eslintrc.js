@@ -1,5 +1,7 @@
 const path = require("path")
-const typescriptConfig = require("./.eslintrc.typescript")
+const typescriptConfig = require("./.eslintrc-typescript")
+const markdownConfig = require("./.eslintrc-markdown")
+const packageConfig = require("./.eslintrc-package")
 
 module.exports = {
   root: true,
@@ -15,23 +17,21 @@ module.exports = {
     },
   },
   plugins: [
-    "react",
     "node",
     "import",
-    "package-json",
+    "simple-import-sort",
+    "react",
     "jest",
     "jest-formatting",
-    "simple-import-sort",
   ],
   extends: [
     "@alexseitsinger/eslint-config/eslint",
-    "@alexseitsinger/eslint-config/react",
     "@alexseitsinger/eslint-config/node",
     "@alexseitsinger/eslint-config/import",
-    "@alexseitsinger/eslint-config/package-json",
+    "@alexseitsinger/eslint-config/simple-import-sort",
+    "@alexseitsinger/eslint-config/react",
     "@alexseitsinger/eslint-config/jest",
     "@alexseitsinger/eslint-config/jest-formatting",
-    "@alexseitsinger/eslint-config/simple-import-sort",
     "prettier",
     "prettier/babel",
   ],
@@ -39,6 +39,14 @@ module.exports = {
     {
       files: ["*.ts", "*.tsx"],
       ...typescriptConfig,
+    },
+    {
+      files: ["package.json"],
+      ...packageConfig,
+    },
+    {
+      files: ["*.md"],
+      ...markdownConfig,
     },
   ],
 }
